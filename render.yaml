@@ -5,6 +5,8 @@ services:
     plan: free
     docker:
       dockerfile: Dockerfile
+      # Update the n8n version in the image tag
+      image: n8nio/n8n:latest  # or specific version like n8nio/n8n:1.40.0
     envVars:
       - key: N8N_BASIC_AUTH_ACTIVE
         value: true
